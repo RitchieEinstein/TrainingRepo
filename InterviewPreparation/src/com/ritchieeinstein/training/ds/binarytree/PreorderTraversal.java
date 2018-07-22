@@ -1,6 +1,7 @@
-package com.ritchieeinstein.training.ds.tree;
+package com.ritchieeinstein.training.ds.binarytree;
 
-public class PostorderTraversal {
+public class PreorderTraversal {
+
 	static class Node {
 		int val;
 		Node left, right;
@@ -11,15 +12,15 @@ public class PostorderTraversal {
 		}
 	}
 
-	public static void postOrder(Node root) {
-		if (root.left != null) {
-			postOrder(root.left);
-		}
-		if (root.right != null) {
-			postOrder(root.right);
-		}
+	public static void preOrder(Node root) {
 		if (null != root) {
 			System.out.println(root.val);
+		}
+		if (root.left != null) {
+			preOrder(root.left);
+		}
+		if (root.right != null) {
+			preOrder(root.right);
 		}
 	}
 
@@ -31,6 +32,6 @@ public class PostorderTraversal {
 		root.left.right = new Node(5);
 		root.right.left = new Node(6);
 		root.right.right = new Node(7);
-		postOrder(root);
+		preOrder(root);
 	}
 }

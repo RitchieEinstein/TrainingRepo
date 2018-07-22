@@ -1,4 +1,4 @@
-package com.ritchieeinstein.training.ds.tree;
+package com.ritchieeinstein.training.ds.binarytree;
 
 import java.util.LinkedList;
 import java.util.Queue;

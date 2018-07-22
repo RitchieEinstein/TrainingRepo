@@ -1,4 +1,4 @@
-package com.ritchieeinstein.training.ds.tree;
+package com.ritchieeinstein.training.ds.binarytree;
 
 public class InorderTraversal {
 
